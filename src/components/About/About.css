@@ -19,7 +19,7 @@
 @media (max-width: 992px) {
     .about-div p{
         font-size: 1.5rem;
+        width: 300px;
         text-align: justify;
-
     }
 }
