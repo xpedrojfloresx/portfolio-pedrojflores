@@ -1,6 +1,6 @@
 import './MyWork.css';
 import dilloAvatar from '../../assets/Dillo-Avatar.png'
-import businessCard from '../../assets/Business-Card.png'
+import businessCard from '../../assets/GameKeys.png'
 import ecommerce from '../../assets/Ecommerce-Demo.png'
 import pctImg from '../../assets/pct-img.png'
 
@@ -24,16 +24,16 @@ const projects = [
         target: "#work"
     },
     {
-        title: "Business Card in React",
+        title: "GameKeys - E-commerce Frontend",
         status: "Deployed",
         statusColor: "#4ade80",
         image: businessCard,
-        github: "https://github.com/xpedrojfloresx/Digital-Business-Card",
-        live: "https://xpedrojfloresx.github.io/Digital-Business-Card/",
+        github: "https://github.com/xpedrojfloresx/ecommerce-front-demo",
+        live: "https://xpedrojfloresx.github.io/ecommerce-front-demo/",
         target: "_blank"
     },
     {
-        title: "E-Overflow",
+        title: "Monorepo E-commerce",
         status: "Deployed",
         statusColor: "#4ade80",
         image: ecommerce,
