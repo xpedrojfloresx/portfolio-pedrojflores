@@ -41,3 +41,9 @@
     from { transform: translateX(0); }
     to   { transform: translateX(-33.33%); }
 }
+
+@media (max-width: 768px) {
+    .tech-marquee-track{
+        gap: 1rem;
+    }
+}

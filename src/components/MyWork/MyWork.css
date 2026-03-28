@@ -122,4 +122,10 @@
     .work-grid {
         grid-template-columns: 1fr;
     }
+
+    .work-specs {
+        padding-top: 4rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
