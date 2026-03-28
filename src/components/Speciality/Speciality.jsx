@@ -1,24 +1,24 @@
 import { useState } from "react"
 import "./Speciality.css"
-import "/src/assets/computerIMG.png"
-import "/src/assets/gameIMG.png"
-import "/src/assets/threejsIMG.png"
+import computerIMG from "../../assets/computerIMG.png"
+import gameIMG from "../../assets/gameIMG.png"
+import threejsIMG from "../../assets/threejsIMG.png"
 
 const specialities = [
     {
         label: "Full Stack Web Development",
         description: "Developing high-performance, scalable web applications that combine robust back-end logic with modern, responsive front-end architectures.",
-        img: "/src/assets/computerIMG.png"
+        img: computerIMG
     },
     {
         label: "Virtual Simulations & 3D Web",
         description: "Engineering immersive 3D environments and virtual simulations that push the boundaries of the browser through spatial design and real-time interaction.",
-        img: "/src/assets/threejsIMG.png"
+        img: threejsIMG
     },
     {
         label: "Game Design & Logic",
         description: "Crafting intuitive game mechanics and gamified systems that transform complex digital interactions into engaging, user-centered experiences.",
-        img: "/src/assets/gameIMG.png"
+        img: gameIMG
     }
 ]
 

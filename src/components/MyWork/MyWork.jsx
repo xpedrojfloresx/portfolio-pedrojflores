@@ -1,15 +1,15 @@
 import './MyWork.css';
-import '/src/assets/Dillo-Avatar.png'
-import '/src/assets/Business-Card.png'
-import '/src/assets/Ecommerce-Demo.png'
-import '/src/assets/pct-img.png'
+import dilloAvatar from '../../assets/Dillo-Avatar.png'
+import businessCard from '../../assets/Business-Card.png'
+import ecommerce from '../../assets/Ecommerce-Demo.png'
+import pctImg from '../../assets/pct-img.png'
 
 const projects = [
     {
         title: "Dillo Avatar",
         status: "Deployed",
         statusColor: "#4ade80",
-        image: "src/assets/Dillo-Avatar.png",
+        image: dilloAvatar,
         github: "https://github.com/dillo-ai/dillo.avatar",
         live: "https://avatar.dillo.ai/",
         target: "_blank"
@@ -18,7 +18,7 @@ const projects = [
         title: "PCT - Videogame",
         status: "In Progress",
         statusColor: "#facc15",
-        image: "/src/assets/pct-img.png",
+        image: pctImg,
         github: "https://github.com/NicoAlvarez13/proyectoPlaza",
         live: "",
         target: "#work"
@@ -27,7 +27,7 @@ const projects = [
         title: "Business Card in React",
         status: "Deployed",
         statusColor: "#4ade80",
-        image: "/src/assets/Business-Card.png",
+        image: businessCard,
         github: "https://github.com/xpedrojfloresx/Digital-Business-Card",
         live: "https://xpedrojfloresx.github.io/Digital-Business-Card/",
         target: "_blank"
@@ -36,7 +36,7 @@ const projects = [
         title: "E-Overflow",
         status: "Deployed",
         statusColor: "#4ade80",
-        image: "/src/assets/Ecommerce-Demo.png",
+        image: ecommerce,
         github: "https://github.com/xpedrojfloresx/ecommerce-monorepo-demo",
         live: "https://ecommerce-monorepo-demo.onrender.com/",
         target: "_blank"
