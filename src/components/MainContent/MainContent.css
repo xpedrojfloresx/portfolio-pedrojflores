@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #212529;
+    color: white;
+}
+
+.main-title h1{
+    font-family: "Permanent Marker", coursive;
+    font-size: 5rem;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.role-text {
+    transition: opacity 0.5s ease;
+}
+
+.role-visible {
+    opacity: 1;
+}
+
+.role-hidden {
+    opacity: 0;
+}
+
+.me-info{
+    width: 400px;
+    max-width: 100%;
+}
+
+.me-info h2{
+    background-color: #0D6EFD;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.me-info p{
+    text-align: left;
+}
+
+.about-info{
+    width: 400px;
+    max-width: 100%;
+}
+
+.about-info p{
+    text-align: right;
+}
+
+.about-info button{
+    width: 250px;
+    height: auto;
+}
+
+.main-title h1 {
+    font-size: clamp(2rem, 6vw, 5rem);
+}
+
+.greyText{
+    color: #A5A3A3;
+}
+
+@media (max-width: 992px) {
+    .me-info, .about-info {
+        width: 80%;
+        align-items: center;
+    }
+
+    .about-info p{
+        text-align: center;
+    }
+
+    .about-info {
+        text-align: center;
+    }
+
+    .about-info button {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .main-title {
+        order: -1;
+    }
+}

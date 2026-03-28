@@ -1,0 +1,25 @@
+.about-div{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 6rem;
+}
+
+.about-div p{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align:center;
+
+    font-size: clamp(2rem, 6vw, 3rem);
+}
+
+.about-div h4{
+    color: #0D6EFD;
+}
+
+@media (max-width: 992px) {
+    .about-div p{
+        font-size: 1.5rem;
+        text-align: justify;
+
+    }
+}
