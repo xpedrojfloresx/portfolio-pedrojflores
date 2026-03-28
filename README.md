@@ -66,5 +66,6 @@ Si quieres ver el código localmente o usarlo como base, sigue estos pasos:
 * **Linkedin:** https://www.linkedin.com/in/pedro-flores-dev/
 * **Email:** pflores0213@gmail.com
 
+----
 
 ### ✨ Proyecto desarrollado por Pedro - 2026
