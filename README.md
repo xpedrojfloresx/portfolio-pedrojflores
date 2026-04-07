@@ -2,6 +2,8 @@
 
 ¡Hola! Soy **Pedro**, un desarrollador enfocado en crear experiencias web interactivas y eficientes. Este es mi portfolio personal, construido íntegramente con **React** para mostrar mis proyectos, habilidades y mi camino en el mundo del desarrollo de software.
 
+> Demo en vivo → [Ver Portfolio](https://portfolio-pedrojflores.vercel.app/) 
+
 ---
 
 ## 👤 Sobre Mí
