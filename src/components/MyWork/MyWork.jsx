@@ -1,7 +1,7 @@
 import './MyWork.css';
 import dilloAvatar from '../../assets/Dillo-Avatar.png'
 import businessCard from '../../assets/GameKeys.png'
-import ecommerce from '../../assets/Ecommerce-Demo.png'
+import ecommerce from '../../assets/HeroEdited.png'
 import pctImg from '../../assets/pct-img.png'
 
 const projects = [
@@ -15,30 +15,30 @@ const projects = [
         target: "_blank"
     },
     {
-        title: "PCT - Videogame",
-        status: "In Progress",
-        statusColor: "#facc15",
+        title: "Plaza Cielo Tierra",
+        status: "Deployed",
+        statusColor: "#4ade80",
         image: pctImg,
-        github: "https://github.com/NicoAlvarez13/proyectoPlaza",
-        live: "",
-        target: "#work"
+        github: "https://github.com/xpedrojfloresx/pct-build-client-dev",
+        live: "https://xpedrojfloresx.github.io/pct-build-client-dev/",
+        target: "_blank"
     },
     {
-        title: "GameKeys - E-commerce Frontend",
+        title: "Pipo & Co",
+        status: "Deployed",
+        statusColor: "#4ade80",
+        image: ecommerce,
+        github: "https://github.com/xpedrojfloresx/pipo-co.frontend",
+        live: "https://www.pipoandco.com.ar/",
+        target: "_blank"
+    },
+    {
+        title: "GameKeys",
         status: "Deployed",
         statusColor: "#4ade80",
         image: businessCard,
         github: "https://github.com/xpedrojfloresx/ecommerce-front-demo",
         live: "https://xpedrojfloresx.github.io/ecommerce-front-demo/",
-        target: "_blank"
-    },
-    {
-        title: "Monorepo E-commerce",
-        status: "Deployed",
-        statusColor: "#4ade80",
-        image: ecommerce,
-        github: "https://github.com/xpedrojfloresx/ecommerce-monorepo-demo",
-        live: "https://ecommerce-monorepo-demo.onrender.com/",
         target: "_blank"
     }
 ]
