@@ -19,8 +19,8 @@ const projects = [
         status: "Deployed",
         statusColor: "#4ade80",
         image: pctImg,
-        github: "https://github.com/xpedrojfloresx/pct-build-client-dev",
-        live: "https://xpedrojfloresx.github.io/pct-build-client-dev/",
+        github: "https://github.com/xpedrojfloresx/pct-trivia-game",
+        live: "https://pct-trivia-game-production.up.railway.app/",
         target: "_blank"
     },
     {
