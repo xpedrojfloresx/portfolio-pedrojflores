@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import './MyWork.css';
 import dilloAvatar from '../../assets/Dillo-Avatar.png'
 import adnDigital from '../../assets/AdnDigital.png'
@@ -57,6 +58,19 @@ const projects = [
 ]
 
 export default function MyWork() {
+    const [zoomed, setZoomed] = useState(null)
+
+    useEffect(() => {
+        if (!zoomed) return
+        const onKey = (e) => { if (e.key === 'Escape') setZoomed(null) }
+        document.addEventListener('keydown', onKey)
+        window.lenis?.stop()
+        return () => {
+            document.removeEventListener('keydown', onKey)
+            window.lenis?.start()
+        }
+    }, [zoomed])
+
     return (
         <div id='work'className='work-specs mt-5'>
             <div className='work-header'>
@@ -70,7 +84,9 @@ export default function MyWork() {
                     <div key={i} className='work-card'>
                         <div className='work-card-img'>
                             {project.image
-                                ? <img src={project.image} alt={project.title} style={{ objectPosition: project.imagePosition }} />
+                                ? <button type='button' className='work-card-zoom' aria-label={`Enlarge ${project.title} image`} onClick={() => setZoomed(project)}>
+                                    <img src={project.image} alt={project.title} style={{ objectPosition: project.imagePosition }} />
+                                </button>
                                 : <div style={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(128, 128, 128, 0.12)', color: '#888' }}>Preview coming soon</div>}
                         </div>
                         <div className='work-card-footer'>
@@ -98,6 +114,13 @@ export default function MyWork() {
                     More Proyects on Github
                 </a>
             </div>
+
+            {zoomed && (
+                <div className='work-lightbox' role='dialog' aria-modal='true' aria-label={zoomed.title} onClick={() => setZoomed(null)}>
+                    <button type='button' className='work-lightbox-close' aria-label='Close' autoFocus>×</button>
+                    <img src={zoomed.image} alt={zoomed.title} />
+                </div>
+            )}
         </div>
     )
 }
