@@ -1,9 +1,66 @@
+/* Theme tokens: dark is the default, light overrides under [data-theme="light"] */
+:root {
+    color-scheme: dark;
+    --accent: #0D6EFD;
+    --bg: black;
+    --text: white;
+    --text-muted: #A5A3A3;
+    --text-soft: #ccc;
+    --nav-bg: black;
+    --nav-link-hover: #ccc;
+    --surface: #111;
+    --border: #222;
+    --border-hover: #444;
+    --chip-bg: #222;
+    --chip-bg-hover: #444;
+    --pill-bg: #000000;
+    --pill-bg-hover: #222;
+    --footer-bg: #0a0a0a;
+    --badge-border: #333;
+    --outline-btn-border: #555;
+    /* icons that are white in the source file */
+    --white-icon-filter: none;
+    /* multicolor icons flattened to a single tone */
+    --mono-icon-filter: brightness(0) invert(1);
+    --logo-filter: none;
+    --status-filter: none;
+}
+
+:root[data-theme="light"] {
+    color-scheme: light;
+    --bg: #f5f6f8;
+    --text: #0b0d12;
+    --text-muted: #5a5f68;
+    --text-soft: #3d424a;
+    --nav-bg: #ffffff;
+    --nav-link-hover: #0D6EFD;
+    --surface: #ffffff;
+    --border: #d9dde3;
+    --border-hover: #aab1bb;
+    --chip-bg: #e9ecf0;
+    --chip-bg-hover: #d5dae1;
+    --pill-bg: #ffffff;
+    --pill-bg-hover: #e9ecf0;
+    --footer-bg: #e9ecf0;
+    --badge-border: #b9bfc8;
+    --outline-btn-border: #7d848e;
+    --white-icon-filter: invert(1);
+    --mono-icon-filter: brightness(0);
+    --logo-filter: invert(1);
+    --status-filter: brightness(0.55);
+}
+
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: "Inter", sans-serif;
-    background-color: black;
+    background-color: var(--bg);
 }
+
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
 

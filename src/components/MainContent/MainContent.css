@@ -2,8 +2,8 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #212529;
-    color: white;
+    background-color: var(--bg);
+    color: var(--text);
 }
 
 .main-title h1{
@@ -31,7 +31,8 @@ body{
 }
 
 .me-info h2{
-    background-color: #0D6EFD;
+    background-color: var(--accent);
+    color: white;
     border-radius: 10px;
     height: 50px;
     display: flex;
@@ -63,7 +64,7 @@ body{
 }
 
 .greyText{
-    color: #A5A3A3;
+    color: var(--text-muted);
 }
 
 @media (max-width: 992px) {

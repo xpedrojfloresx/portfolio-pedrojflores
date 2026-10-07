@@ -1,8 +1,10 @@
 import './MyWork.css';
 import dilloAvatar from '../../assets/Dillo-Avatar.png'
-import businessCard from '../../assets/GameKeys.png'
-import ecommerce from '../../assets/HeroEdited.png'
-import pctImg from '../../assets/pct-img.png'
+import adnDigital from '../../assets/AdnDigital.png'
+import dilloWeb from '../../assets/Dillo-Web.png'
+import claroImg from '../../assets/Claro-Atencion.png'
+import talleresImg from '../../assets/Gestion-Talleres.png'
+import pluginImg from '../../assets/Dillo-Avatar-Plugin.png'
 
 const projects = [
     {
@@ -10,36 +12,47 @@ const projects = [
         status: "Deployed",
         statusColor: "#4ade80",
         image: dilloAvatar,
-        github: "https://github.com/dillo-ai/dillo.avatar",
         live: "https://avatar.dillo.ai/",
         target: "_blank"
     },
     {
-        title: "Plaza Cielo Tierra",
+        title: "AdnDigital",
         status: "Deployed",
         statusColor: "#4ade80",
-        image: pctImg,
-        github: "https://github.com/xpedrojfloresx/pct-trivia-game",
-        live: "https://pct-trivia-game-production.up.railway.app/",
+        image: adnDigital,
+        live: "https://adndigital.biz/new/",
         target: "_blank"
     },
     {
-        title: "Pipo & Co",
+        title: "Dillo",
         status: "Deployed",
         statusColor: "#4ade80",
-        image: ecommerce,
-        github: "https://github.com/xpedrojfloresx/pipo-co.frontend",
-        live: "https://www.pipoandco.com.ar/",
+        image: dilloWeb,
+        live: "https://dillo.ai/",
         target: "_blank"
     },
     {
-        title: "GameKeys",
+        title: "Claro · Atención inclusiva",
         status: "Deployed",
         statusColor: "#4ade80",
-        image: businessCard,
-        github: "https://github.com/xpedrojfloresx/ecommerce-front-demo",
-        live: "https://xpedrojfloresx.github.io/ecommerce-front-demo/",
+        image: claroImg,
+        live: "https://dillo.ar/claro/",
         target: "_blank"
+    },
+    {
+        title: "Dillo Avatar Plugin",
+        status: "Deployed",
+        statusColor: "#4ade80",
+        image: pluginImg,
+        imagePosition: "right",
+        live: "https://lse.dillo.ar/demo-aeropuertos",
+        target: "_blank"
+    },
+    {
+        title: "Gestión de Talleres",
+        status: "Deployed",
+        statusColor: "#4ade80",
+        image: talleresImg
     }
 ]
 
@@ -56,7 +69,9 @@ export default function MyWork() {
                 {projects.map((project, i) => (
                     <div key={i} className='work-card'>
                         <div className='work-card-img'>
-                            <img src={project.image} alt={project.title} />
+                            {project.image
+                                ? <img src={project.image} alt={project.title} style={{ objectPosition: project.imagePosition }} />
+                                : <div style={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(128, 128, 128, 0.12)', color: '#888' }}>Preview coming soon</div>}
                         </div>
                         <div className='work-card-footer'>
                             <div className='work-card-info'>
@@ -66,9 +81,6 @@ export default function MyWork() {
                                 </span>
                             </div>
                             <div className='work-card-links'>
-                                <a href={project.github} target='_blank' rel='noreferrer' className='work-btn'>
-                                    <img src='https://cdn.simpleicons.org/github/white' alt='github' width={18} />
-                                </a>
                                 <a {...(project.live ? { href: project.live, target: project.target, rel: 'noreferrer' } : {})} className='work-btn' style={!project.live ? { opacity: 0.4, cursor: 'not-allowed', pointerEvents: 'none' } : {}}>
                                     <svg width="18" height="18" fill="white" viewBox="0 0 24 24">
                                         <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3zm-1 2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8h-2v8H5V7h8V5z" />

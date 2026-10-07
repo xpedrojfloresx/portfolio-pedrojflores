@@ -13,7 +13,7 @@
 }
 
 .about-div h4{
-    color: #0D6EFD;
+    color: var(--accent);
 }
 
 @media (max-width: 992px) {

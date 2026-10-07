@@ -32,7 +32,7 @@ export default function MainContent() {
             </div>
             <div className="about-info text-center">
                 <p className="greyText">From web architecture to virtual simulations — I craft digital experiences that stand out</p>
-                <a href="/public/CV-PedroFlores.pdf" download>
+                <a href="/CV-PedroFlores.pdf" download>
                     <button type="button" className="btn btn-primary">Download Resume</button>
                 </a>
             </div>

@@ -8,7 +8,7 @@
 }
 
 .div-specs h4{
-    color: #0D6EFD;
+    color: var(--accent);
     font-size: 0.85rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
@@ -38,17 +38,17 @@
     font-size: 2rem;
     font-weight: 700;
     cursor: pointer;
-    color: #A5A3A3;
+    color: var(--text-muted);
     transition: color 0.3s ease;
     margin: 0;
 }
 
 .spec-item:hover {
-    color: white;
+    color: var(--text);
 }
 
 .spec-active {
-    color: white;
+    color: var(--text);
 }
 
 .spec-block {
@@ -58,7 +58,7 @@
 
 .spec-description {
     font-size: 0.9rem;
-    color: #A5A3A3;
+    color: var(--text-muted);
     max-width: 350px;
     text-align: justify;
     margin: 0;
